@@ -1,0 +1,15 @@
+create table if not exists block_transfer_request_params(
+request_url Integer not null,
+as_of_date varchar(255) null,
+sorted char null,
+page_no Integer null,
+page_size Integer null,
+response_count varchar(255) null,
+accepts Integer null,
+produces Integer null,
+no_cache varchar(255) null,
+must_revalidate Integer null,
+include_subdomain Integer null,
+date_format varchar(255) null,
+remarks varchar(255) null,
+constraint block_transfer_request_params_pk primary key(request_url));
